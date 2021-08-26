@@ -587,6 +587,7 @@ img {
   align-items: baseline;
 }
 
+/* ============= Footer-Address ============= */
 .footer-address {
   margin-right: 70px;
 }
@@ -639,6 +640,7 @@ address .item:not(:last-child) {
 
 /* ============= FOOTER - Social Links ============= */
 
+/* .footer-form-title, */
 .footer-social-subscribe {
   font-weight: bold;
   font-size: 14px;
@@ -895,4 +897,43 @@ address .item:not(:last-child) {
 
 .close-black-svg {
   fill: #000000;
+}
+
+/* ============= Форма подписки на рассылку в футере ============= */
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-form-field {
+  display: flex;
+}
+
+.footer-form-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--alt-text-cl);
+  margin-bottom: 20px;
+}
+
+.footer-form input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  background: var(--black-bg-cl);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--secondary-text-cl);
 }
