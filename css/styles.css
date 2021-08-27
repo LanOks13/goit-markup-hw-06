@@ -914,22 +914,29 @@ address .item:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.form-label {
+.form-field {
   display: flex;
-  /* visibility: hidden; */
+  flex-direction: row;
+  align-items: baseline;
+  text-align: center;
+
+  /* outline: 1px solid tomato; */
 }
 
-/* 
+.form-label {
+  /* visibility: hidden; */
+  display: none;
+}
+
 .form-input {
   margin: 0;
   width: 358px;
   height: 50px;
   margin-right: 12px;
-  padding-left: 16px;
+  padding: 15px 16px;
 
   background: var(--black-bg-cl);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -949,6 +956,7 @@ address .item:not(:last-child) {
   height: 50px;
 }
 
+/* 09090909 */
 .footer-subscribe-button {
   display: flex;
   align-items: center;
@@ -961,8 +969,12 @@ address .item:not(:last-child) {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #fff;
-  font-size: inherit;
+  color: var(--alt-text-cl);
+
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
   cursor: pointer;
 }
 
@@ -977,9 +989,9 @@ footer-button-icon:focus {
 }
 
 .form-input:placeholder-shown {
-  border-color: #ffa000;
+  /* border-color: #ffa000; */
 }
 
 .form-input:not(:placeholder-shown) {
   border-color: #2196f3;
-} */
+}
