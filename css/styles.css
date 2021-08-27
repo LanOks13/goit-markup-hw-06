@@ -640,7 +640,8 @@ address .item:not(:last-child) {
 
 /* ============= FOOTER - Social Links ============= */
 
-.footer-social-subscribe {
+.footer-social-subscribe,
+.footer-email-subscribe {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -905,13 +906,13 @@ address .item:not(:last-child) {
 
 .footer-email-subscribe {
   display: inline-block;
-  font-weight: bold;
+  /* font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--alt-text-cl);
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
 }
 
 .form-field {
