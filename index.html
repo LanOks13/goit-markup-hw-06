@@ -385,8 +385,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-1"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-1"></use>
                 </svg>
               </a>
             </li>
@@ -398,8 +398,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-2"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-2"></use>
                 </svg>
               </a>
             </li>
@@ -411,8 +411,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-3"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-3"></use>
                 </svg>
               </a>
             </li>
@@ -424,8 +424,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-4"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-4"></use>
                 </svg>
               </a>
             </li>
@@ -437,8 +437,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-5"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-5"></use>
                 </svg>
               </a>
             </li>
@@ -450,8 +450,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="icon-Logo" width="106" height="60">
-                  <use href="./images/icons.svg#icon-Logo-6"></use>
+                <svg class="icon-logo" width="106" height="60">
+                  <use href="./images/icons.svg#icon-logo-6"></use>
                 </svg>
               </a>
             </li>
@@ -532,28 +532,34 @@
           </div>
 
           <!-- ============= Форма подписки на рассылку в футере =============-->
-          <form class="footer-form">
-            <p class="footer-form-title">Подпишитесь на рассылку</p>
-            <div class="footer-form-field">
-              <label class="form-field">
+          <div class="footer-subscribe">
+            <span class="footer-email-subscribe">Подпишитесь на рассылку</span>
+
+            <form class="form">
+              <div class="form-field">
+                <label for="user_email" class="form-label">E-mail</label>
                 <input
-                  type="email"
                   class="form-input"
+                  type="email"
                   name="email"
+                  id="user_email"
                   placeholder="E-mail"
                 />
-              </label>
-              <button type="submit" class="footer-submit-button">
-                Подписаться
-                <!-- <svg>
-                  <use></use>
-                </svg> -->
-              </button>
-            </div>
-          </form>
+                <button type="submit" class="footer-subscribe-button">
+                  Подписаться
+                  <svg class="footer-button-icon" width="24" height="24px">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- ============= МОДАЛЬНОЕ ОКНО =============-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="modal-close-button">
