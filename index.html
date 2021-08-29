@@ -567,6 +567,82 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <!-- ============== МОДАЛЬНОЕ ОКНО - FORM (THE START) ============= -->
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+        <form class="form-order" name="order" autocomplete="on">
+          <label for="form-name" class="form-label">Имя</label>
+          <div class="client-info">
+            <input
+              type="text"
+              class="form-input input-required"
+              id="form-name"
+              name="user-name"
+              pattern="^[А-Яа-яЁё\s]+$"
+              required
+              autofocus
+            />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <label for="form-tel" class="form-label">Телефон</label>
+          <div class="client-info">
+            <input
+              class="form-input input-required"
+              type="tel"
+              id="form-tel"
+              name="user-tel"
+              required
+              minlength="10"
+              maxlength="10"
+              pattern="^[ 0-9]+$"
+            />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+
+          <label for="form-email" class="form-label">Почта</label>
+          <div class="client-info">
+            <input
+              class="form input"
+              type="email"
+              id="form-email"
+              name="user-email"
+            />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+
+          <label for="form-comment" class="form-label">Комментарий</label>
+          <div class="client-info">
+            <textarea
+              class="form-input"
+              id="form-commet"
+              name="user-comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="client-info">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="checkbox"
+              name="policy"
+              value="Agree"
+              required
+            />
+          </div>
+
+          <button class="form-button" type="submit">Отправить</button>
+        </form>
+
+        <!-- ============== МОДАЛЬНОЕ ОКНО - FORM (THE END) ============= -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
