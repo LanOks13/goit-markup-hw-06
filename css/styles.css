@@ -1106,6 +1106,11 @@ textarea::placeholder {
   border-radius: 2px;
 }
 
+.modal-link-agreement {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 .modal-form-icon-sign {
   position: absolute;
   top: 50%;
@@ -1114,6 +1119,7 @@ textarea::placeholder {
   background: var(--accent-cl);
   border-radius: 2px;
   opacity: 0;
+  transition: transform var(--main-transition);
 }
 
 .modal-button {
