@@ -660,11 +660,11 @@ address .item:not(:last-child) {
 
 /* ============= START -- FOOTER - Форма подписки на рассылку в футере ============= */
 
-.footer-subscribe1 {
+.footer-subscribe-letter {
   margin-left: 93px;
 }
 
-.footer-subscribe1 span {
+.footer-subscribe-letter span {
   display: inline-block;
   /* font-weight: bold;
   font-size: 14px;
@@ -675,21 +675,21 @@ address .item:not(:last-child) {
   margin-bottom: 20px; */
 }
 
-.form-field1 {
+.form-field-footer {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   text-align: center;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
-.form-label1 {
+.form-label-footer {
   /* visibility: hidden; */
   display: none;
 }
 
-.form-input1 {
+.form-input-footer {
   margin: 0;
   width: 358px;
   height: 50px;
@@ -703,22 +703,22 @@ address .item:not(:last-child) {
   color: var(--alt-text-cl);
 }
 
-.form-input1::placeholder {
+.form-input-footer::placeholder {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   color: var(--secondary-text-cl);
 }
 
-.form-input1:placeholder-shown {
+.form-input-footer:placeholder-shown {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.form-input1:not(:placeholder-shown) {
+.form-input-footer:not(:placeholder-shown) {
   border-color: #2196f3;
 }
 
-.footer-subscribe-button1 {
+.footer-subscribe-button {
   display: flex;
   align-items: center;
   text-align: center;
@@ -739,7 +739,7 @@ address .item:not(:last-child) {
   cursor: pointer;
 }
 
-.footer-button-icon1 {
+.footer-button-icon {
   fill: var(--alt-text-cl);
   margin-left: 10px;
 }
