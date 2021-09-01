@@ -979,6 +979,7 @@ address .item:not(:last-child) {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
@@ -987,6 +988,11 @@ address .item:not(:last-child) {
 
 .close-black-svg {
   fill: #000000;
+}
+
+.modal-close-button:hover .close-black-svg,
+.modal-close-button:focus .close-black-svg {
+  fill: var(--accent-cl);
 }
 
 /* ============= МОДАЛЬНОЕ ОКНО - FORM ============= */
@@ -1065,14 +1071,14 @@ textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.checkbox {
+/* .checkbox {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--main-text-cl);
   margin-bottom: 30px;
-}
+} */
 /* =========================*/
 
 .form-label-checkbox {
@@ -1108,7 +1114,7 @@ textarea::placeholder {
 
 .modal-link-agreement {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: var(--accent-cl);
 }
 
 .modal-form-icon-sign {
@@ -1119,7 +1125,7 @@ textarea::placeholder {
   background: var(--accent-cl);
   border-radius: 2px;
   opacity: 0;
-  transition: transform var(--main-transition);
+  transition: fill transform var(--main-transition);
 }
 
 .modal-button {
@@ -1139,6 +1145,14 @@ textarea::placeholder {
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  transition: background-color transform var(--main-transition);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
