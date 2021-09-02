@@ -641,8 +641,13 @@ address .item:not(:last-child) {
 
 /* ============= FOOTER - Social Links ============= */
 
+.footer-social {
+  margin-right: 93px;
+}
+
 .footer-social-subscribe,
 .footer-email-subscribe {
+  font-family: inherit;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -661,29 +666,31 @@ address .item:not(:last-child) {
 /* ============= START -- FOOTER - Форма подписки на рассылку в футере ============= */
 
 .footer-subscribe-letter {
-  margin-left: 93px;
+  margin-right: auto;
 }
 
-.footer-subscribe-letter span {
-  display: inline-block;
-  /* font-weight: bold;
+/* .footer-email-subscribe {
+  font-family: inherit;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--alt-text-cl);
-  margin-bottom: 20px; */
-}
+  margin-bottom: 20px;
+} */
 
 .form-field-footer {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: baseline;
   text-align: center;
 
   /* outline: 1px solid tomato; */
 }
-
+.form {
+  display: inline-flex;
+}
 .form-label-footer {
   /* visibility: hidden; */
   display: none;
@@ -727,6 +734,7 @@ address .item:not(:last-child) {
   padding: 10px 28px 10px 29px;
 
   font-family: inherit;
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
