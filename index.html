@@ -557,5 +557,100 @@
         </div>
       </div>
     </footer>
+
+    <!-- ============= МОДАЛЬНОЕ ОКНО =============-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-close-button">
+          <svg class="close-black-svg" width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+       
+        <!-- ============== МОДАЛЬНОЕ ОКНО - FORM (THE START) ============= -->
+        <form class="form-order">
+           <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <ul class="list set-modal-fields">
+            <li class="form-field">
+              <label for="form-name" class="form-label">Имя </label>
+              <input
+                type="text"
+                class="form-input"
+                id="form-name"
+                name="user-name"
+                autocomplete="off"
+                required
+                autofocus
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </li>
+
+            <li class="form-field">
+              <label for="form-tel" class="form-label">Телефон</label>
+              <input
+                class="form-input input-required"
+                type="tel"
+                id="form-tel"
+                name="user-tel"
+                autocomplete="off"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </li>
+
+            <li class="form-field">
+              <label for="form-email" class="form-label">Почта</label>
+              <input
+                class="form-input"
+                type="email"
+                id="form-email"
+                name="user-email"
+                autocomplete="off"
+                required
+              />
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </li>
+
+            <li class="form-field">
+              <label for="form-comment" class="form-label">Комментарий</label>
+              <textarea
+                class="form-input comment"
+                id="form-comment"
+                name="user-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </li>
+          </ul>
+          <!-- <div class="checkbox"> -->
+            <label class="form-label-checkbox">
+              <input
+                type="checkbox"
+                class="form-checkbox"
+                name="sing"
+                value="agreement"
+              />
+              <svg class="modal-form-icon-sign" width="16" height="15">
+                <use href="./images/icons.svg#icon-icon-check"></use>
+              </svg>
+              <span class="modal-form-checkbox-custom"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modal-link-agreement">Условия договора</a>
+            </label>
+          <!-- </div> -->
+          <button type="submit" class="modal-button">Отправить</button>
+        </form>
+        
+        <!-- ============== МОДАЛЬНОЕ ОКНО - FORM (THE END) ============= -->
+      
+    </div>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
