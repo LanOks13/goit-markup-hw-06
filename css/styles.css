@@ -666,9 +666,9 @@ address .item:not(:last-child) {
 
 /* ============= START -- FOOTER - Форма подписки на рассылку в футере ============= */
 
-.footer-subscribe-letter {
+/* .footer-subscribe-letter {
   margin-right: auto;
-}
+} */
 
 /* .footer-email-subscribe {
   font-family: inherit;
@@ -681,6 +681,10 @@ address .item:not(:last-child) {
   margin-bottom: 20px;
 } */
 
+/* .form {
+  display: inline-flex;
+} */
+
 .form-field-footer {
   display: inline-flex;
   flex-direction: row;
@@ -689,9 +693,7 @@ address .item:not(:last-child) {
 
   /* outline: 1px solid tomato; */
 }
-.form {
-  display: inline-flex;
-}
+
 .form-label-footer {
   /* visibility: hidden; */
   display: none;
@@ -1102,7 +1104,7 @@ textarea::placeholder {
   color: var(--main-text-cl);
   margin-bottom: 30px;
 } */
-/* =========================*/
+/* --------------------------------------------------------------------*/
 
 .form-label-checkbox {
   position: relative;
@@ -1169,7 +1171,7 @@ textarea::placeholder {
   opacity: 0;
   transition: fill transform var(--main-transition);
 }
-
+/* ----------------------------------------------------------------------- */
 .modal-button {
   display: block;
   margin-left: auto;
