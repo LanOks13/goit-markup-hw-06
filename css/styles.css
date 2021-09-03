@@ -1023,6 +1023,7 @@ address .item:not(:last-child) {
 }
 
 .set-modal-fields {
+  font-family: inherit;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1106,10 +1107,12 @@ textarea::placeholder {
 .form-label-checkbox {
   position: relative;
   display: flex;
+  justify-content: space-evenly;
   margin: 0 auto;
   margin-bottom: 30px;
   align-items: center;
   width: fit-content;
+  font-family: inherit;
   font-size: 14px;
   line-height: 1.71;
   cursor: pointer;
@@ -1176,7 +1179,7 @@ textarea::placeholder {
   height: 50px;
   font-family: inherit;
   color: var(--alt-text-cl);
-
+  font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
