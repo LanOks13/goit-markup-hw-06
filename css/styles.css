@@ -964,7 +964,7 @@ address .item:not(:last-child) {
   max-height: 100%;
   max-width: 100%;
 
-  overflow: auto;
+  /* overflow: auto; */
 
   background-color: var(--primary-bg-cl);
   color: var(--main-text-cl);
