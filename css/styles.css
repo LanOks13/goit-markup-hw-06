@@ -636,6 +636,7 @@ img {
 }
 
 address .item:not(:last-child) {
+  display: inline-block;
   margin-bottom: 9px;
 }
 
