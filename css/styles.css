@@ -590,6 +590,8 @@ img {
 
 /* ============= FOOTER - Address ============= */
 .footer-address {
+  display: inline-block;
+  width: 231px;
   margin-right: 70px;
 }
 
@@ -636,14 +638,19 @@ img {
 }
 
 address .item:not(:last-child) {
-  display: inline-block;
+  display: block;
   margin-bottom: 9px;
 }
 
 /* ============= FOOTER - Social Links ============= */
 
 .footer-social {
+  display: inline-block;
   margin-right: 93px;
+}
+
+.footer-social > .social-icons {
+  display: inline-flex;
 }
 
 .footer-social-subscribe,
@@ -666,9 +673,10 @@ address .item:not(:last-child) {
 
 /* ============= START -- FOOTER - Форма подписки на рассылку в футере ============= */
 
-/* .footer-subscribe-letter {
-  margin-right: auto;
-} */
+.footer-subscribe-letter {
+  display: inline-block;
+  /* margin-right: auto; */
+}
 
 /* .footer-email-subscribe {
   font-family: inherit;
